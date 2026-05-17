@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shreya Veni</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&family=Exo+2:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Circuit trace SVG background -->
+  <canvas id="circuit-canvas"></canvas>
+
+  <!-- Scanline overlay -->
+  <div class="scanlines"></div>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="logo-bracket">[</span>
+        <span class="logo-text">SV</span>
+        <span class="logo-bracket">]</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link" data-section="about">ABOUT</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">PROJECTS</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">CONTACT</a></li>
+      </ul>
+      <div class="nav-status">
+        <span class="status-dot"></span>
+        <span class="status-text">ONLINE</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-chip">
+        <div class="chip-pins left">
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <div class="chip-body">
+          <p class="chip-label">UNIT_ID: SHREYA_VENI</p>
+          <h1 class="hero-title">
+            HARDWARE<br/>
+            <em>MEETS</em><br/>
+            SOFTWARE
+          </h1>
+          <p class="hero-sub">CSE · CCOEW · PUNE · BATCH 2029</p>
+          <p class="hero-desc">
+            Embedded systems. Bare-metal C. CubeSat avionics.<br/>
+            Building at the register level — no abstractions, no apologies.
+          </p>
+          <div class="hero-tags">
+            <span class="htag">EmbSoc Founder</span>
+            <span class="htag">Team Vinidra Avionics</span>
+            <span class="htag">LEET 2027</span>
+            <span class="htag">ATmega328P</span>
+          </div>
+        </div>
+        <div class="chip-pins right">
+          <span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="sec-num">01</span>
+        <h2 class="sec-title">ABOUT</h2>
+        <div class="sec-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            First-year CSE student at Cummins College of Engineering for Women, Pune.
+            I work at the <strong>hardware–software boundary</strong> — register-level,
+            bare-metal, where the actual machine lives.
+          </p>
+          <p>
+            I founded <strong>EmbSoc</strong> to build a serious embedded systems
+            culture at CCOEW. I was selected as one of <strong>two first-years</strong>
+            for Team Vinidra's CubeSat Avionics subsystem.
+          </p>
+          <p>
+            Targeting <strong>LEET 2027</strong> for lateral entry to IIIT Hyderabad.
+            Long-term goal: computer architecture research.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-block">
+            <span class="stat-val" id="gh-repos">--</span>
+            <span class="stat-label">PUBLIC REPOS</span>
+          </div>
+          <div class="stat-block">
+            <span class="stat-val" id="gh-followers">--</span>
+            <span class="stat-label">FOLLOWERS</span>
+          </div>
+          <div class="stat-block">
+            <span class="stat-val">2029</span>
+            <span class="stat-label">GRADUATION</span>
+          </div>
+          <div class="stat-block">
+            <span class="stat-val">1</span>
+            <span class="stat-label">CUBESAT</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Commit Graph -->
+      <div class="commit-section">
+        <p class="subsec-label">// COMMIT ACTIVITY</p>
+        <div class="commit-graph-wrap">
+          <img
+            id="commit-graph"
+            src="https://ghchart.rshah.org/7a9e8e/concatenate-this"
+            alt="GitHub commit graph"
+            class="commit-graph-img"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="sec-num">02</span>
+        <h2 class="sec-title">PROJECTS</h2>
+        <div class="sec-line"></div>
+      </div>
+
+      <p class="subsec-label">// PINNED REPOS</p>
+      <div class="projects-grid" id="projects-grid">
+        <!-- Static fallbacks; JS will replace with live data if available -->
+        <div class="project-card">
+          <div class="card-top">
+            <span class="card-icon">◈</span>
+            <div class="card-links">
+              <a href="https://github.com/concatenate-this/hc-sr04-radar" target="_blank" class="card-link">↗ REPO</a>
+            </div>
+          </div>
+          <h3 class="card-title">HC-SR04 Ultrasonic Radar</h3>
+          <p class="card-desc">Register-level ultrasonic radar on ATmega328P with real-time Processing visualization.</p>
+          <div class="card-stack">
+            <span class="stack-tag">C</span>
+            <span class="stack-tag">ATmega328P</span>
+            <span class="stack-tag">AVR</span>
+            <span class="stack-tag">Processing</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="card-top">
+            <span class="card-icon">◈</span>
+            <div class="card-links">
+              <a href="https://github.com/concatenate-this" target="_blank" class="card-link">↗ REPO</a>
+            </div>
+          </div>
+          <h3 class="card-title">Battleships TCP</h3>
+          <p class="card-desc">Multiplayer Battleships over TCP with hand-rolled HTTP server and C++ Grid class using enum-based state.</p>
+          <div class="card-stack">
+            <span class="stack-tag">C++</span>
+            <span class="stack-tag">TCP/IP</span>
+            <span class="stack-tag">POSIX</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="card-top">
+            <span class="card-icon">◈</span>
+            <div class="card-links">
+              <a href="https://github.com/concatenate-this" target="_blank" class="card-link">↗ REPO</a>
+            </div>
+          </div>
+          <h3 class="card-title">CPU Scheduling Simulator</h3>
+          <p class="card-desc">FCFS, SJF, STCF, RR, and MLFQ scheduling algorithms implemented in C with Gantt chart output.</p>
+          <div class="card-stack">
+            <span class="stack-tag">C</span>
+            <span class="stack-tag">OS Concepts</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="card-top">
+            <span class="card-icon">◈</span>
+            <div class="card-links">
+              <a href="https://github.com/concatenate-this" target="_blank" class="card-link">↗ REPO</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live repos from GitHub API -->
+      <div id="live-repos-wrap" style="display:none;">
+        <p class="subsec-label" style="margin-top:2.5rem;">// LATEST REPOS</p>
+        <div class="repo-list" id="live-repos"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="sec-num">03</span>
+        <h2 class="sec-title">CONTACT</h2>
+        <div class="sec-line"></div>
+      </div>
+      <p class="contact-line">I'm on the internet. Find me.</p>
+      <div class="contact-grid">
+        <a href="https://github.com/concatenate-this" target="_blank" class="contact-card">
+          <span class="contact-icon">GH</span>
+          <span class="contact-label">GitHub</span>
+          <span class="contact-val">concatenate-this</span>
+        </a>
+        <a href="https://x.com/shreyadoesstuff" target="_blank" class="contact-card">
+          <span class="contact-icon">TW</span>
+          <span class="contact-label">Twitter / X</span>
+          <span class="contact-val">@shreyadoesstuff</span>
+        </a>
+        <a href="mailto:venidshreya@gmail.com" class="contact-card">
+          <span class="contact-icon">ML</span>
+          <span class="contact-label">Email</span>
+          <span class="contact-val">your@email.com</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-text">SHREYA VENI · PUNE · <span id="year"></span></span>
+      <span class="footer-text">#BringBackJoyAndWhimsy</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
